@@ -1,22 +1,22 @@
-**vector：**【类】
+## **vector：**【类】
 
-***STL实现：***
-
-
+### ***STL实现：***
 
 
 
-***应用一：***
+
+
+### ***应用一：***
 
 二维可变数组 **初始化**
 
-1.用new  构建一个指向对象的指针（nums）:**数据存在堆里面**
+1.用new 构建一个指向对象的指针（nums）:**数据存在堆里面**
 
-vector<vector<int>> *nums = new vector<vector<int>>(n ,vector<int>(m));
+vector<vector<int>>  *nums = new vector<vector<int>>(n ,vector<int>(m));
 
 2.直接调用构造函数调用： **数据存在栈里面**
 
-vector<vector<int>> nums(n ,vector<int>(m));
+vector<vector<int>> nums(n ,vector<int>(m));  //n,m **vector长度**
 
 二维数组**行**：***nums.size()***; 单个行的**列**：***nums[i].size()***
 
@@ -30,10 +30,14 @@ vector<vector<int>> nums(n ,vector<int>(m));
 
 
 
-***应用二：***
+### ***应用二：***
 
-容器相关**函数应用**
+容器相关**函数应用**【增删改查及其他操作】
 
-向vector中插入元素[不是向元素赋值] ：A**.push_back()**
+向vector中插入元素[不是向元素赋值] ：A**.push_back(val)**  A.pop_back()
 
-向元素赋值: A[i]
+查找某个元素是否属于vector：
+
+if(find(solution.begin(),solution.end(),nums[i]) != solution.end()) {存在}
+
+迭代器：
