@@ -16,7 +16,7 @@ vector<vector<int>>  *nums = new vector<vector<int>>(n ,vector<int>(m));
 
 2.直接调用构造函数调用： **数据存在栈里面**
 
-vector<vector<int>> nums(n ,vector<int>(m));  //n,m **vector长度**
+vector<vector<int>> nums(n ,vector<int>(m));  //n,m **vector长度**,插入时为一个**vector<int>**
 
 二维数组**行**：***nums.size()***; 单个行的**列**：***nums[i].size()***
 
@@ -36,8 +36,14 @@ vector<vector<int>> nums(n ,vector<int>(m));  //n,m **vector长度**
 
 向vector中插入元素[不是向元素赋值] ：A**.push_back(val)**  A.pop_back()
 
-查找某个元素是否属于vector：
+**查找**某个元素是否属于vector：
 
-if(find(solution.begin(),solution.end(),nums[i]) != solution.end()) {存在}
+```
+vector<int>::iterator got = myrecipe.find ("coffee");//迭代器
+```
+
+if(got != solution.end()) {存在}
+
+**排序** sort(vec.begin(),vec.end());
 
 迭代器：

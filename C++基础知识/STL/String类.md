@@ -14,7 +14,7 @@ string.size() 会反应字符串的真实长度，非‘\0’
 
 **string的插入：**str.insert(pos,string);
 
-**某个字符的查找：** find（char， start pos）
+**某个字符的查找：** find（char， start pos）//返回的位置，未找到返回s.npos
 
 **反转字符串**：reverse(str.begin(), str.end());
 
